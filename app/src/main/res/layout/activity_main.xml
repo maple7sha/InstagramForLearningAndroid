@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/root"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="com.maple7sha.haowan.whereareyou.MainActivity">
+
+  <android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    android:elevation="@dimen/defaultElevation"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <ImageView
+      android:id="@+id/ivLogo"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="center"
+      android:scaleType="center"
+      android:src="@drawable/img_toolbar_logo"/>
+  </android.support.v7.widget.Toolbar>
+
+  <android.support.v7.widget.RecyclerView
+    android:id="@+id/rvFeed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/toolbar"
+    android:scrollbars="none" />
+
+  <ImageButton
+    android:id="@+id/btnCreate"
+    android:layout_width="@dimen/btnFabSize"
+    android:layout_height="@dimen/btnFabSize"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginBottom="@dimen/btnFabMargins"
+    android:layout_marginRight="@dimen/btnFabMargins"
+    android:background="@drawable/btn_fab_default"
+    android:elevation="@dimen/defaultElevation"
+    android:src="@drawable/ic_instagram_white"
+    android:textSize="28sp" />
+
+</RelativeLayout>
